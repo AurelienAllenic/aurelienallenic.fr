@@ -3,11 +3,13 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <meta name="author" content="aurelienallenic" />
+        <meta name="description" content="Autodidacte et motivé, je suis à la recherche d'un contrat en alternance suite à mon inscription en année de bachelor à l'ETNA, Ecole des Technologies Numériques Avancées" />
+        <meta name="keywords" content="aurelienallenic, CV, aurelien, allenic, dev, developpeur, alternance, etna, recherche, contrat" />
+        <meta name="author" content="Aurélien Allenic" />
+
         <title>Aurélien Allenic</title>
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+
+        <link rel="icon" type="image/x-icon" href="img/favicon.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -21,7 +23,7 @@
 
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <a class="navbar-brand js-scroll-trigger" href="index.php">
                 <span class="d-block d-lg-none">Aurélien Allenic</span>
                 <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photo_cv.png" alt="ma photo" /></span>
             </a>
@@ -45,8 +47,7 @@
             <section class="resume-section" id="a_propos">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
-                        Aurélien
-                        <span class="text-primary">Allenic</span>
+                        Aurélien Allenic
                     </h1>
                     <div class="subheading mb-5">
                         <a href="mailto:aurelien.allenic@gmail.com">aurelien.allenic@gmail.com</a>
@@ -192,24 +193,24 @@
                     <h2 class="mb-5">Lettre de motivation</h2>
                     <p>
                         Madame, Monsieur,<br><br>
-
-Je suis actuellement en recherche d'un contrat d'alternance.<br>
-Suite à l’obtention d’une licence d’arts du spectacle, j’ai choisi de changer de voie pour m’orienter vers le domaine du développement informatique en m’inscrivant en année de Bachelor à l'ETNA. <br>
-C’est notamment grâce à des proches, mais aussi appuyé par des sites internet tels qu’Open Classroom que j’ai pu étudier en quasi-autodidacte les technologies HTML, CSS, PHP, MySQL, Git/GitHub, ou encore JavaScript plus récemment.<br>
-En tant qu’autodidacte et futur étudiant en informatique, c’est tout mon sérieux et ma détermination que je mettrais au service des tâches qui me seront confiées. L’alternance consiste en une journée par mois de cours et le reste du temps en entreprise. Par ailleurs, l’ETNA organise en début d’année une « piscine » qui, pendant six semaines intensives, me donnera la possibilité d’acquérir et de consolider des bases importantes et de valider l’expérience acquise au cours de cette période. <br>
-Des objectifs de réalisation de projets pour l’école, effectués en entreprise et nommées « run » viendront mobiliser 23 heures toutes les trois semaines. Ces heures sont généralement placées le mardi et jeudi mais sont modifiables à la demande de l’entreprise.<br>
-Etant en cours d’apprentissage, je suis ouvert, intéressé par tout ce qui pourrait me donner des acquisitions solides autant théoriques que pratiques. Ma compétence actuelle est tournée vers le développement web, ce qui m’a d’ores et déjà amené à la réalisation de projets personnels de création de sites incluant des bases de données. Qu’il s’agisse de renforcer ces connaissances ou bien de m’amener vers d’autres, je suis motivé et prêt à assumer tous les efforts qui me conduiront pas à pas vers la professionnalisation.<br>
-Je souhaite intégrer une entreprise pour apprendre en situation réelle, me donner la possibilité de faire montre de toute l’énergie, du sérieux et de l’implication dont je suis capable.
-Je me tiens à votre entière disposition en vue d’entretiens ou tests préalables à une embauche en alternance de la part de votre entreprise.<br><br>
-Dans cette attente, <br><br>
-
-Je vous prie d’agréer, Monsieur, Madame, l’expression de mes salutations distinguées
-</p>
-
+                        Je suis actuellement en recherche d'un contrat d'alternance.<br>
+                        Suite à l’obtention d’une licence d’arts du spectacle, j’ai choisi de changer de voie pour m’orienter vers le domaine du développement informatique en m’inscrivant en année de Bachelor à l'ETNA. <br>
+                        C’est notamment grâce à des proches, mais aussi appuyé par des sites internet tels qu’Open Classroom que j’ai pu étudier en quasi-autodidacte les technologies HTML, CSS, PHP, MySQL, Git/GitHub, ou encore JavaScript plus récemment.<br>
+                        En tant qu’autodidacte et futur étudiant en informatique, c’est tout mon sérieux et ma détermination que je mettrais au service des tâches qui me seront confiées. L’alternance consiste en une journée par mois de cours et le reste du temps en entreprise. Par ailleurs, l’ETNA organise en début d’année une « piscine » qui, pendant six semaines intensives, me donnera la possibilité d’acquérir et de consolider des bases importantes et de valider l’expérience acquise au cours de cette période. <br>
+                        Des objectifs de réalisation de projets pour l’école, effectués en entreprise et nommées « run » viendront mobiliser 23 heures toutes les trois semaines. Ces heures sont généralement placées le mardi et jeudi mais sont modifiables à la demande de l’entreprise.<br>
+                        Etant en cours d’apprentissage, je suis ouvert, intéressé par tout ce qui pourrait me donner des acquisitions solides autant théoriques que pratiques. Ma compétence actuelle est tournée vers le développement web, ce qui m’a d’ores et déjà amené à la réalisation de projets personnels de création de sites incluant des bases de données. Qu’il s’agisse de renforcer ces connaissances ou bien de m’amener vers d’autres, je suis motivé et prêt à assumer tous les efforts qui me conduiront pas à pas vers la professionnalisation.<br>
+                        Je souhaite intégrer une entreprise pour apprendre en situation réelle, me donner la possibilité de faire montre de toute l’énergie, du sérieux et de l’implication dont je suis capable.<br>
+                        Je me tiens à votre entière disposition en vue d’entretiens ou tests préalables à une embauche en alternance de la part de votre entreprise.<br><br>
+                        Dans cette attente, <br><br>
+                        Je vous prie d’agréer, Monsieur, Madame, l’expression de mes salutations distinguées
+                    </p>
+                </div>
+            </section>
         </div>
-        <!-- Bootstrap core JS-->
+
+        <!-- JS placed at the end so the pages load faster -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
         <script src="scripts.js"></script>
+
     </body>
 </html>
