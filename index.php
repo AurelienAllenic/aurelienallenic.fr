@@ -1,3 +1,11 @@
+<?php
+    $bdd = new PDO('mysql:host=localhost;dbname=aurelienallenic.fr;charset=utf8', 'root', '');
+    $queryE = $bdd->query('SELECT * FROM experience');
+    $queryF = $bdd->query('SELECT * FROM formation');
+    $experiences = $queryE->fetchAll();
+    $formations = $queryF->fetchAll();
+    //var_dump($experiences);die;
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -23,16 +31,16 @@
 
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="index.php">
+            <a class="navbar-brand js-scroll-trigger" href="/">
                 <span class="d-block d-lg-none">Aurélien Allenic</span>
                 <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photo_cv.png" alt="ma photo" /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#a_propos">A propos</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Expérience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#formation">formation</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#a_propos">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Expériences</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#formation">formations</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#competences">Compétences</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#centres_interets">Centres d'intérêts</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#lettremotivation">Lettre de motivation</a></li>
@@ -60,30 +68,22 @@
             <!--experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
+                    <h2 class="mb-5">Experiences</h2>
+                    <?php
+                        foreach ($experiences as $experience) {
+                    ?>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Animateur</h3>
-                            <div class="subheading mb-3">Animations pour la société Dianniversaire</div>
-                            <p>Encadrement de fêtes d'anniversaires pour enfants</p>                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2018-2021</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Stage d'observation</h3>
-                            <div class="subheading mb-3">Atelier du Temps Passé</div>
-                            <p>Stage d'observation dans un atelier de restauration et de conservation d'objets d'oeuvres d'arts</p>
+                            <h3 class="mb-0"><?php echo $experience['titre']; ?></h3>
+                            <div class="subheading mb-3"><?php echo $experience['sous_titre']; ?></div>
+                            <p><?php echo $experience['contenu']; ?></p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2015-2016</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><?php echo $experience['periode']; ?></span></div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Stage d'observation</h3>
-                            <div class="subheading mb-3">Cabinet Ruivo</div>
-                            <p>Stage d'observation au cabinet Ruivo, cabinet spécialisé en droit des assurances</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2013-2014</span></div>
-                    </div>
+                    <?php
+                        }
+                    ?>
+
                 </div>
             </section>
             <hr class="m-0" />
@@ -92,34 +92,21 @@
             <section class="resume-section" id="formation">
 
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Formation</h2>
-
+                    <h2 class="mb-5">Formations</h2>
+                    <?php
+                        foreach ($formations as $formation) {
+                    ?>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Obtention d'une licence</h3>
-                            <div class="subheading mb-3">"Arts du Spectacle : théâtre"</div>
-                            <div>Université Sorbonne-nouvelle - Paris 3</div>
+                            <h3 class="mb-0"><?php echo $formation['titre']; ?></h3>
+                            <div class="subheading mb-3"><?php echo $formation['sous_titre']; ?></div>
+                            <div><?php echo $formation['contenu']; ?></div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2020-2021</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><?php echo $formation['periode']; ?></span></div>
                     </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Première année de licence</h3>
-                            <div class="subheading mb-3">"Arts du Spectacle : théâtre"</div>
-                             <div>Université Sorbonne-nouvelle - Paris 3</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2018-2019</span></div>
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Obtention du Baccalauréat</h3>
-                            <div class="subheading mb-3">Terminale ES - Option Sciences Politiques</div>
-                             <div>Lycée Sainte-Louise 75020</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2017-2018</span></div>
-                    </div>
+                    <?php
+                        }
+                    ?>
 
                 </div>
             </section>
