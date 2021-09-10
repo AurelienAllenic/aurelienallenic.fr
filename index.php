@@ -18,7 +18,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Autodidacte et motivé, je suis à la recherche d'un contrat en alternance suite à mon inscription en année de bachelor à l'ETNA, Ecole des Technologies Numériques Avancées" />
+        <meta name="description" content="Autodidacte et motivé, je suis à la recherche d'un contrat en alternance suite à mon inscription en année de Bachelor à l'ETNA, Ecole des Technologies Numériques Avancées" />
         <meta name="keywords" content="aurelienallenic, CV, aurelien, allenic, dev, developpeur, alternance, etna, recherche, contrat" />
         <meta name="author" content="Aurélien Allenic" />
 
@@ -64,7 +64,8 @@
                         Aurélien Allenic
                     </h1>
                     <div class="subheading mb-5">
-                        <a href="mailto:aurelien.allenic@gmail.com">aurelien.allenic@gmail.com</a>
+                        <a href="mailto:aurelien.allenic@gmail.com">aurelien.allenic@gmail.com</a><br>
+                        <small><a href="CV_aurelienallenic.pdf" target="_blank">CV en pdf</a></small>
                     </div>
                      <p>
                         <?php 
