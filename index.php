@@ -127,7 +127,7 @@
             <section class="resume-section" id="competences">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Compétences</h2>
-                    <p>J'ai pu suivre en autodidacte des cours sur <a href="https://openclassrooms.com">openclassroom</a></p>
+                    <p>J'ai pu suivre en autodidacte des cours sur <a href="https://openclassrooms.com" target="_blank">openclassroom</a></p>
                     <div class="subheading mb-3">Cours suivis et en cours d'acquisition :</div>
                     <ul class="fa-ul mb-0">
                     <?php
