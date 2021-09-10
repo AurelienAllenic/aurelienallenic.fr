@@ -49,7 +49,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Expériences</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#formation">formations</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#competences">Compétences</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#centres_interets">Centres d'intérêts</a></li>l
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#centres_interets">Centres d'intérêts</a></li>
                 </ul>
             </div>
         </nav>
