@@ -1,17 +1,17 @@
 <?php
     $bdd = new PDO('mysql:host=localhost;dbname=aurelienallenic.fr;charset=utf8', 'root', '');
-    $queryA     = $bdd->query('SELECT * FROM a_propos');
+    $queryA     = $bdd->query('SELECT * FROM lettre_motivation');
     $queryE     = $bdd->query('SELECT * FROM experience');
     $queryF     = $bdd->query('SELECT * FROM formation');
     $queryCO    = $bdd->query('SELECT * FROM competence');
     $queryC     = $bdd->query('SELECT * FROM centre_interet');
-    $queryL     = $bdd->query('SELECT * FROM lettre_motivation');
-    $apropos            = $queryA->fetchAll();
+    $queryL     = $bdd->query('SELECT * FROM langue');
+    $langues            = $queryL->fetchAll();
+    $aurelien           = $queryA->fetchAll();
     $experiences        = $queryE->fetchAll();
     $formations         = $queryF->fetchAll();
     $competences        = $queryCO->fetchAll();
     $centres_interets   = $queryC->fetchAll();
-    $lettre_motivation  = $queryL->fetchAll();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -40,17 +40,16 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="/">
                 <span class="d-block d-lg-none">Aurélien Allenic</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photo_cv.png" alt="ma photo" /></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/photo_cv.jpg" alt="ma photo" /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#a_propos">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#a_propos">Aurélien</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Expériences</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#formation">formations</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#competences">Compétences</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#centres_interets">Centres d'intérêts</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#lettremotivation">Lettre de motivation</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#centres_interets">Centres d'intérêts</a></li>l
                 </ul>
             </div>
         </nav>
@@ -67,9 +66,9 @@
                     <div class="subheading mb-5">
                         <a href="mailto:aurelien.allenic@gmail.com">aurelien.allenic@gmail.com</a>
                     </div>
-                    <p class="lead mb-5">
+                     <p>
                         <?php 
-                            echo $apropos[0]['contenu'];
+                            echo $aurelien[0]['contenu'];
                         ?>
                     </p>
                 </div>
@@ -132,7 +131,15 @@
                     <ul class="fa-ul mb-0">
                     <?php
                         foreach ($competences as $competence) {
-                            echo '<li>'.$competence['icone'].$competence['technologie'].'</li>';
+                            echo '<li><span class="fa-li">'.$competence['icone'].'</span>'.$competence['technologie'].'</li>';
+                        }
+                    ?>
+                    </ul>
+                    <br><div class="subheading mb-3">langues :</div>
+                    <ul class="fa-ul mb-0">
+                     <?php
+                        foreach ($langues as $langue) {
+                            echo '<li><span class="fa-li">'.$langue['icone'].'</span>'.$langue['libelle'].' - '.$langue['commentaire']. '</li>';
                         }
                     ?>
                     </ul>
@@ -147,27 +154,12 @@
                     <ul class="fa-ul mb-0">
                     <?php
                         foreach ($centres_interets as $centre_interet) {
-                            echo '<li>'.$centre_interet['icone'].$centre_interet['libelle'].'</li>';
+                            echo '<li><span class="fa-li">'.$centre_interet['icone'].'</span><strong>'.$centre_interet['libelle'].'</strong><br><em>'.$centre_interet['detail'].'</em></li>';
                         }
                     ?> 
                     </ul>
                 </div>
             </section>
-            <hr class="m-0" />
-
-            <!-- lettre de motivation-->
-            <section class="resume-section" id="lettremotivation">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Lettre de motivation</h2>
-                    <p>
-                        <?php 
-                            echo $lettre_motivation[0]['contenu'];
-                        ?>
-                    </p>
-                </div>
-            </section>
-        </div>
-
         <!-- JS placed at the end so the pages load faster -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="scripts.js"></script>
